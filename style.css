@@ -25,3 +25,7 @@
 .starting-block {
     background-color: rgb(95, 248, 210);
 }
+
+.log-left, .log-right {
+    background-color: lightblue
+}
