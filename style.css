@@ -5,12 +5,23 @@
 }
 
 .grid {
+    margin: 20px auto;
     border: 1px solid black;
-    height: 360px;
-    width: 360px;
+    height: 362px;
+    width: 362px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .grid div {
     height: 40px;
     width: 40px;
+}
+
+.ending-block {
+    background-color: blueviolet;
+}
+
+.starting-block {
+    background-color: rgb(95, 248, 210);
 }
