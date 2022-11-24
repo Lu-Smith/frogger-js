@@ -1,3 +1,16 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .grid {
     border: 1px solid black;
+    height: 360px;
+    width: 360px;
+}
+
+.grid div {
+    height: 40px;
+    width: 40px;
 }
