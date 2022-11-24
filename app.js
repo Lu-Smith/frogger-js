@@ -9,7 +9,7 @@ const carsRight = document.querySelectorAll('.car-right');
 
 let currentIndex = 76;
 const width = 9;
-let TimerId;
+let timerId;
 
 function moveFrog(e) {
     squares[currentIndex].classList.remove('frog');
@@ -129,12 +129,15 @@ function moveCarRight(carRight) {
 };;
 
 function lose() {
-    if (squares[currentIndex].classList.contains('c1')) {
+    if (squares[currentIndex].classList.contains('c1') ||
+    squares[currentIndex].classList.contains('l4') ||
+    squares[currentIndex].classList.contains('l5') 
+    ) {
         resultDisplay.textContent = 'You lose!';
-        clearInterval(TimerId);
+        clearInterval(timerId);
         squares[currentIndex].classList.remove('frog');
         document.removeEventListener('keyup', moveFrog);
     }
 };
 
-setInterval(autoMoveElements, 1000);
+timerId = setInterval(autoMoveElements, 1000);
