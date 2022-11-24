@@ -29,3 +29,7 @@
 .log-left, .log-right {
     background-color: lightblue
 }
+
+.car-left, .car-right {
+    background-color: rgb(84, 85, 85)
+}
