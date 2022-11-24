@@ -26,9 +26,9 @@
     background-color: rgb(95, 248, 210);
 }
 
-.log-left, .log-right {
+/* .log-left, .log-right {
     background-color: lightblue
-}
+} */
 
 .car-left, .car-right {
     background-color: rgb(84, 85, 85)
@@ -36,4 +36,12 @@
 
 .frog {
     background-color: green;
+}
+
+.l1, .l2, .l3 {
+    background-color: rgb(114, 50, 20);
+}
+
+.l4, .l5 {
+    background-color: rgb(138, 223, 252)
 }
