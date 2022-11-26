@@ -19,7 +19,11 @@
 }
 
 .ending-block {
-    background-color: blueviolet;
+    color: blueviolet;
+}
+
+.ending-block span {
+    font-size: 40px;
 }
 
 .starting-block {
@@ -35,11 +39,11 @@
 } */
 
 .l1, .l2, .l3 {
-    background-color: rgb(114, 50, 20);
+    background: linear-gradient(0deg, rgb(83, 54, 54) 1.9%, rgb(200, 125, 76) 39.7%, rgb(83, 54, 54) 90.5%);
 }
 
 .l4, .l5 {
-    background-color: rgb(138, 223, 252)
+    background: linear-gradient(-180deg, #5dd1ff 0%, #54e2ec 28%, #5dd1ff 40%, #64e8f1 70%, #5dd1ff 80%);
 }
 
 .c1 {
