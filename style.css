@@ -6,11 +6,12 @@
 
 .grid {
     margin: 20px auto;
-    border: 1px solid black;
-    height: 362px;
-    width: 362px;
+    border: 4px solid black;
+    height: 368px;
+    width: 368px;
     display: flex;
     flex-wrap: wrap;
+    background-color: rgb(138, 182, 121);
 }
 
 .grid div {
@@ -19,16 +20,20 @@
 }
 
 .ending-block {
-    color: blueviolet;
+    color: rgb(128, 49, 13);
 }
 
-.ending-block span {
+.ending-block span{
     font-size: 40px;
 }
 
-.starting-block {
-    background-color: rgb(95, 248, 210);
+.frog {
+    font-size: 40px;
+    background-color: black;
+    border-radius: 20px;
+    color: rgb(233, 243, 241);
 }
+
 
 /* .log-left, .log-right {
     background-color: lightblue
@@ -47,11 +52,13 @@
 }
 
 .c1 {
-    background-color: rgb(115, 117, 117);
+    background-color: rgb(173, 177, 177);
     color: rgb(245, 83, 8);
     display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom: 2px dashed white;
+    border-top: 2px dashed white;
 }
 
 .c1 span {
@@ -71,10 +78,9 @@
 }
 
 .c2, .c3 {
-    background-color: rgb(115, 117, 117);
-    color: rgb(115, 117, 117);
+    background-color: rgb(173, 177, 177);
+    color: rgb(173, 177, 177);
+    border-bottom: 2px dashed white;
+    border-top: 2px dashed white;
 }
 
-.frog {
-    background-color: green;
-}
