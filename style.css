@@ -114,8 +114,15 @@ button:hover {
     border-top: 2px dashed white;
 }
 
+.c2 span, .c3 span {
+    display: none;
+}
+
 .frog {
     font-size: 35px;
     border-radius: 20px;
     border: 2px solid white;
+    background-image: url(./pets.svg);
+    background-size: cover;  
 }
+
