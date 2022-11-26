@@ -6,6 +6,8 @@ const logsLeft = document.querySelectorAll('.log-left');
 const logsRight = document.querySelectorAll('.log-right');
 const carsLeft = document.querySelectorAll('.car-left');
 const carsRight = document.querySelectorAll('.car-right');
+const gameOver = document.querySelector('.ending-block span');
+const startGame = document.querySelector('.starting-block span');
 
 let currentIndex = 76;
 const width = 9;
@@ -15,6 +17,8 @@ let currentTime = 15;
 
 function moveFrog(e) {
     squares[currentIndex].classList.remove('frog');
+    startGame.classList.remove('frog');
+    startGame.classList.add('start-game');
     switch(e.key) {
         case 'ArrowLeft' :
             if (currentIndex % width !== 0)
@@ -159,6 +163,8 @@ function win() {
         startPauseDisplay.textContent = 'Play again';
         timerId = null;
         outcomeTimerId = null;
+        gameOver.classList.add('game-over');
+        squares[currentIndex].classList.remove('frog');
     }
 }
  
@@ -172,6 +178,7 @@ startPauseDisplay.addEventListener('click', () => {
         startPauseDisplay.textContent = 'Start';
     } else if (startPauseDisplay.textContent === 'Try again' || startPauseDisplay.textContent === 'Play again') {
         startPauseDisplay.textContent = 'Pause';
+        startGame.classList.remove('start-game');
         currentTime = 15;
         currentIndex = 76;
         timeLeftDisplay.textContent = '15';

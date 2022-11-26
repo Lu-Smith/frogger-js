@@ -64,6 +64,11 @@ button:hover {
     font-size: 40px;
 }
 
+.game-over {
+    color: rgb(240, 4, 4);
+    background-color: white;
+}
+
 
 /* .log-left, .log-right {
     background-color: lightblue
@@ -118,11 +123,21 @@ button:hover {
     display: none;
 }
 
+.bunny {
+    font-size: 35px;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+
 .frog {
     font-size: 35px;
     border-radius: 20px;
     border: 2px solid white;
     background-image: url(./pets.svg);
     background-size: cover;  
+}
+
+.start-game {
+    display: none;
 }
 
