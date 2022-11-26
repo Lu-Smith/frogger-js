@@ -43,6 +43,7 @@ function autoMoveElements() {
     logsRight.forEach(logRight => moveLogRight(logRight));
     carsLeft.forEach(carLeft => moveCarLeft(carLeft));
     carsRight.forEach(carRight => moveCarRight(carRight));
+    startPauseDisplay.textContent = 'Pause';
 };
 
 function checkOutcomes() {
@@ -164,6 +165,7 @@ startPauseDisplay.addEventListener('click', () => {
         timerId = null;
         outcomeTimerId = null;
         document.removeEventListener('keyup', moveFrog);
+        startPauseDisplay.textContent = 'Start';
     } else {
     timerId = setInterval(autoMoveElements, 1000);
     outcomeTimerId = setInterval(checkOutcomes, 50);
