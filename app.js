@@ -1,6 +1,7 @@
 const timeLeftDisplay = document.querySelector('#time-left');
 const resultDisplay = document.querySelector('#result');
 const startPauseDisplay = document.querySelector('#start-pause-button');
+const advancedstartPauseDisplay = document.querySelector('#advanced-start-pause-button');
 const squares = document.querySelectorAll('.grid div');
 const logsLeft = document.querySelectorAll('.log-left');
 const logsRight = document.querySelectorAll('.log-right');
@@ -167,6 +168,8 @@ function win() {
         gameOver.classList.add('game-over');
         squares[currentIndex].classList.remove('frog');
         boardGame.classList.add('game-over');
+        advancedstartPauseDisplay.classList.remove('advanced');
+        startPauseDisplay.classListadd('basic');
     }
 }
  
