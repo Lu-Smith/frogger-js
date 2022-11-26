@@ -181,6 +181,7 @@ startPauseDisplay.addEventListener('click', () => {
     } else if (startPauseDisplay.textContent === 'Try again' || startPauseDisplay.textContent === 'Play again') {
         startPauseDisplay.textContent = 'Pause';
         startGame.classList.remove('start-game');
+        gameOver.classList.remove('game-over');
         boardGame.classList.remove('game-over');
         currentTime = 15;
         currentIndex = 76;

@@ -37,6 +37,15 @@ button {
     color: white;
 }
 
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+.advanced, .basic {
+    display: none;
+}
+
 button:hover {
     color: rgb(241, 198, 172);
     background-color: black;
@@ -144,3 +153,21 @@ button:hover {
     display: none;
 }
 
+footer {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+footer a {
+    display: inline-flex;
+    text-decoration: none;
+    color: #f1720a;
+    transition: all 200ms ease-in-out;
+}
+
+
+footer a:hover {
+    color: #914a10;
+    transform: translateY(-5px);
+    
+}
