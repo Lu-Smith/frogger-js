@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+h3 {
+    margin: 20px;
+    font-size: 30px;
+    color: red;
+}
+
+h3 span {
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+h4 {
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+button {
+    padding: 15px 20px;
+    font-size: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    transition: all 200ms ease-in-out;
+    border: none;
+    background-color: #f1720a;
+    color: white;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+.advanced, .basic {
+    display: none;
+}
+
+button:hover {
+    color: rgb(241, 198, 172);
+    background-color: black;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.grid {
+    margin: 20px auto;
+    border: 4px solid black;
+    height: 468px;
+    width: 368px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(138, 182, 121);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.grid div {
+    height: 40px;
+    width: 40px;
+}
+
+.ending-block {
+    color: rgb(128, 49, 13);
+}
+
+.ending-block span{
+    font-size: 40px;
+}
+
+.game-over {
+    color: rgb(240, 4, 4);
+    background-color: white;
+}
+
+
+/* .log-left, .log-right {
+    background-color: lightblue
+} */
+
+/* .car-left, .car-right {
+    background-color: rgb(84, 85, 85)
+} */
+
+.l1, .l2, .l3 {
+    background: linear-gradient(0deg, rgb(83, 54, 54) 1.9%, rgb(200, 125, 76) 39.7%, rgb(83, 54, 54) 90.5%);
+}
+
+.l4, .l5 {
+    background: linear-gradient(-180deg, #5dd1ff 0%, #54e2ec 28%, #5dd1ff 40%, #64e8f1 70%, #5dd1ff 80%);
+}
+
+.c1 {
+    background-color: rgb(173, 177, 177);
+    color: rgb(245, 83, 8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px dashed white;
+    border-top: 2px dashed white;
+}
+
+.c1 span {
+    font-size: 40px;   
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 600,
+    'GRAD' 10,
+    'opsz' 48
+  }
+
+.cLeft {
+    transform: scaleX(-1);
+}
+
+.c2, .c3 {
+    background-color: rgb(173, 177, 177);
+    color: rgb(173, 177, 177);
+    border-bottom: 2px dashed white;
+    border-top: 2px dashed white;
+}
+
+.c2 span, .c3 span {
+    display: none;
+}
+
+.bunny {
+    font-size: 35px;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+
+.frog {
+    font-size: 35px;
+    border-radius: 20px;
+    border: 2px solid white;
+    background-image: url(./pets.svg);
+    background-size: cover;  
+}
+
+.start-game {
+    display: none;
+}
+
+footer {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+footer a {
+    display: inline-flex;
+    text-decoration: none;
+    color: #f1720a;
+    transition: all 200ms ease-in-out;
+}
+
+
+footer a:hover {
+    color: #914a10;
+    transform: translateY(-5px);
+    
+}
