@@ -141,31 +141,44 @@ function lose() {
     squares[currentIndex].classList.contains('l5') ||
     currentTime <= 0
     ) {
-        resultDisplay.textContent = 'You lose!';
+        resultDisplay.textContent = 'You lose ☹️';
         clearInterval(timerId);
         clearInterval(outcomeTimerId);
         squares[currentIndex].classList.remove('frog');
         document.removeEventListener('keyup', moveFrog);
-    }
+        startPauseDisplay.textContent = 'Try again';
 };
+}
 
 function win() {
     if (squares[currentIndex].classList.contains('ending-block')) {
-        resultDisplay.textContent = 'You won!';
+        resultDisplay.textContent = 'You won 😄';
         clearInterval(timerId);
         clearInterval(outcomeTimerId);
         document.removeEventListener('keyup', moveFrog);
+        startPauseDisplay.textContent = 'Play again';
+        timerId = null;
+        outcomeTimerId = null;
     }
 }
  
 startPauseDisplay.addEventListener('click', () => {
-    if (timerId) {
+    if (timerId && startPauseDisplay.textContent !== 'Try again') {
         clearInterval(timerId);
         clearInterval(outcomeTimerId)
         timerId = null;
         outcomeTimerId = null;
         document.removeEventListener('keyup', moveFrog);
         startPauseDisplay.textContent = 'Start';
+    } else if (startPauseDisplay.textContent === 'Try again' || startPauseDisplay.textContent === 'Play again') {
+        startPauseDisplay.textContent = 'Pause';
+        currentTime = 15;
+        currentIndex = 76;
+        timeLeftDisplay.textContent = '15';
+        resultDisplay.textContent = 'Go';
+        timerId = setInterval(autoMoveElements, 1000);
+        outcomeTimerId = setInterval(checkOutcomes, 50);
+        document.addEventListener('keyup', moveFrog);
     } else {
     timerId = setInterval(autoMoveElements, 1000);
     outcomeTimerId = setInterval(checkOutcomes, 50);
