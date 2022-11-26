@@ -31,6 +31,13 @@ button {
     font-size: 20px;
     border-radius: 20px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    transition: all 200ms ease-in-out;
+}
+
+button:hover {
+    color: white;
+    background-color: black;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .grid {
@@ -57,12 +64,6 @@ button {
     font-size: 40px;
 }
 
-.frog {
-    font-size: 40px;
-    background-color: black;
-    border-radius: 20px;
-    color: rgb(233, 243, 241);
-}
 
 /* .log-left, .log-right {
     background-color: lightblue
@@ -113,3 +114,8 @@ button {
     border-top: 2px dashed white;
 }
 
+.frog {
+    font-size: 35px;
+    border-radius: 20px;
+    border: 2px solid white;
+}
