@@ -43,11 +43,32 @@
 }
 
 .c1 {
-    background-color: black;
+    background-color: rgb(115, 117, 117);
+    color: rgb(245, 83, 8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c1 span {
+    font-size: 40px;   
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 600,
+    'GRAD' 10,
+    'opsz' 48
+  }
+
+.cLeft {
+    transform: scaleX(-1);
 }
 
 .c2, .c3 {
-    background-color: rgb(84, 85, 85);
+    background-color: rgb(115, 117, 117);
+    color: rgb(115, 117, 117);
 }
 
 .frog {
