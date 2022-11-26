@@ -8,6 +8,7 @@ const carsLeft = document.querySelectorAll('.car-left');
 const carsRight = document.querySelectorAll('.car-right');
 const gameOver = document.querySelector('.ending-block span');
 const startGame = document.querySelector('.starting-block span');
+const boardGame = document.querySelector('.grid');
 
 let currentIndex = 76;
 const width = 9;
@@ -165,6 +166,7 @@ function win() {
         outcomeTimerId = null;
         gameOver.classList.add('game-over');
         squares[currentIndex].classList.remove('frog');
+        boardGame.classList.add('game-over');
     }
 }
  
@@ -179,6 +181,7 @@ startPauseDisplay.addEventListener('click', () => {
     } else if (startPauseDisplay.textContent === 'Try again' || startPauseDisplay.textContent === 'Play again') {
         startPauseDisplay.textContent = 'Pause';
         startGame.classList.remove('start-game');
+        boardGame.classList.remove('game-over');
         currentTime = 15;
         currentIndex = 76;
         timeLeftDisplay.textContent = '15';
