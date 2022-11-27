@@ -15,7 +15,7 @@ let currentIndex = 76;
 const width = 9;
 let timerId;
 let outcomeTimerId;
-let currentTime = 15;
+let currentTime = 10;
 
 function moveFrog(e) {
     squares[currentIndex].classList.remove('frog');
@@ -169,7 +169,7 @@ function win() {
         squares[currentIndex].classList.remove('frog');
         boardGame.classList.add('game-over');
         advancedstartPauseDisplay.classList.remove('advanced');
-        startPauseDisplay.classListadd('basic');
+        startPauseDisplay.classList.add('basic');
     }
 }
  
@@ -186,9 +186,9 @@ startPauseDisplay.addEventListener('click', () => {
         startGame.classList.remove('start-game');
         gameOver.classList.remove('game-over');
         boardGame.classList.remove('game-over');
-        currentTime = 15;
+        currentTime = 10;
         currentIndex = 76;
-        timeLeftDisplay.textContent = '15';
+        timeLeftDisplay.textContent = '10';
         resultDisplay.textContent = 'Go';
         timerId = setInterval(autoMoveElements, 1000);
         outcomeTimerId = setInterval(checkOutcomes, 50);

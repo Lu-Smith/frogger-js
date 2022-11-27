@@ -60,7 +60,7 @@ button:hover {
     width: 368px;
     display: flex;
     flex-wrap: wrap;
-    background-color: rgb(190, 207, 144);
+    background-color: rgb(212, 179, 87);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -70,7 +70,7 @@ button:hover {
 }
 
 .ending-block {
-    color: rgb(14, 94, 67);
+    color: rgb(247, 244, 245);
 }
 
 .ending-block span{
@@ -137,7 +137,7 @@ button:hover {
 .frog {
     font-size: 35px;
     border-radius: 20px;
-    border: 2px solid rgb(84, 36, 129);;
+    border: 2px solid rgb(84, 36, 129);
     background-image: url(./pets.svg);
     background-size: cover;  
     color: rgb(84, 36, 129);
@@ -159,9 +159,7 @@ footer a {
     transition: all 200ms ease-in-out;
 }
 
-
 footer a:hover {
     color: #468573;
     transform: translateY(-5px);
-    
 }
