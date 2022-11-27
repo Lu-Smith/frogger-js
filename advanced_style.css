@@ -6,18 +6,19 @@
 
 body {
     text-align: center;
+    background-color: rgb(232, 255, 196);
 }
 
 h3 {
     margin: 20px;
     font-size: 30px;
-    color: red;
+    color: rgb(14, 94, 67);
 }
 
 h3 span {
-    background-color: red;
+    background-color: rgb(14, 94, 67);
     color: white;
-    padding: 5px;
+    padding: 5px 10px;
     border-radius: 10px;
 }
 
@@ -59,7 +60,7 @@ button:hover {
     width: 368px;
     display: flex;
     flex-wrap: wrap;
-    background-color: rgb(138, 182, 121);
+    background-color: rgb(190, 207, 144);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -69,7 +70,7 @@ button:hover {
 }
 
 .ending-block {
-    color: rgb(128, 49, 13);
+    color: rgb(14, 94, 67);
 }
 
 .ending-block span{
@@ -77,30 +78,21 @@ button:hover {
 }
 
 .game-over {
-    color: rgb(240, 4, 4);
+    color: rgb(131, 5, 131);
     background-color: white;
 }
 
-
-/* .log-left, .log-right {
-    background-color: lightblue
-} */
-
-/* .car-left, .car-right {
-    background-color: rgb(84, 85, 85)
-} */
-
 .l1, .l2, .l3 {
-    background: linear-gradient(0deg, rgb(83, 54, 54) 1.9%, rgb(200, 125, 76) 39.7%, rgb(83, 54, 54) 90.5%);
+    background: linear-gradient(0deg, rgb(200, 142, 76) 1.9%, rgb(90, 68, 50) 29.7%, rgb(200, 142, 76));
 }
 
 .l4, .l5 {
-    background: linear-gradient(-180deg, #5dd1ff 0%, #54e2ec 28%, #5dd1ff 40%, #64e8f1 70%, #5dd1ff 80%);
+    background: linear-gradient(-180deg, #a7dcf1 0%, #87e7ee 28%, #7cd0f1 40%, #90f0f7 70%, #a9dff5 80%);
 }
 
 .c1 {
-    background-color: rgb(173, 177, 177);
-    color: rgb(245, 83, 8);
+    background-color: rgb(190, 194, 194);
+    color: rgb(35, 3, 48);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -125,8 +117,8 @@ button:hover {
 }
 
 .c2, .c3 {
-    background-color: rgb(173, 177, 177);
-    color: rgb(173, 177, 177);
+    background-color: rgb(190, 194, 194);
+    color: rgb(190, 194, 194);
     border-bottom: 2px dashed white;
     border-top: 2px dashed white;
 }
@@ -138,15 +130,17 @@ button:hover {
 .bunny {
     font-size: 35px;
     border-radius: 20px;
-    border: 2px solid white;
+    border: 2px solid rgb(84, 36, 129);
+    color: rgb(84, 36, 129);
 }
 
 .frog {
     font-size: 35px;
     border-radius: 20px;
-    border: 2px solid white;
+    border: 2px solid rgb(84, 36, 129);;
     background-image: url(./pets.svg);
     background-size: cover;  
+    color: rgb(84, 36, 129);
 }
 
 .start-game {
@@ -161,13 +155,13 @@ footer {
 footer a {
     display: inline-flex;
     text-decoration: none;
-    color: #f1720a;
+    color: #11634c;
     transition: all 200ms ease-in-out;
 }
 
 
 footer a:hover {
-    color: #914a10;
+    color: #468573;
     transform: translateY(-5px);
     
 }

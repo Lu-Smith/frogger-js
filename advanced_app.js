@@ -11,7 +11,7 @@ const gameOver = document.querySelector('.ending-block span');
 const startGame = document.querySelector('.starting-block span');
 const boardGame = document.querySelector('.grid');
 
-let currentIndex = 76;
+let currentIndex = 94;
 const width = 9;
 let timerId;
 let outcomeTimerId;
@@ -187,7 +187,7 @@ startPauseDisplay.addEventListener('click', () => {
         gameOver.classList.remove('game-over');
         boardGame.classList.remove('game-over');
         currentTime = 15;
-        currentIndex = 76;
+        currentIndex = 94;
         timeLeftDisplay.textContent = '15';
         resultDisplay.textContent = 'Go';
         timerId = setInterval(autoMoveElements, 1000);
