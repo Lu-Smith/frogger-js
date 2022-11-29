@@ -31,7 +31,7 @@ h4 {
     background: linear-gradient(to right , hsl(0, 1%, 17%) 5%, hsl(0, 97%, 49%) 20%, hsl(0, 0%, 13%) 50%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    width: 60%;
+    width: 65%;
     animation: shine 3s infinite linear;
     padding: 20px 70px;
 }
