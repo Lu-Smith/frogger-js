@@ -203,13 +203,21 @@ footer {
 footer a {
     display: inline-flex;
     text-decoration: none;
-    color: #11634c;
+    color: hsl(0, 1%, 17%);
     transition: all 200ms ease-in-out;
+    background: linear-gradient(to right , hsl(0, 1%, 17%) 5%, hsl(0, 97%, 49%) 20%, hsl(0, 0%, 13%) 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
 }
 
 footer a:hover {
-    color: #468573;
+    color: #914a10;
     transform: translateY(-5px);
+    background: linear-gradient(to right , hsl(49, 98%, 47%) 5%, hsl(0, 97%, 49%) 20%, hsl(180, 77%, 26%) 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
 }
 
 @media only screen and (max-width: 8200px) {
