@@ -34,9 +34,10 @@ button {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     transition: all 200ms ease-in-out;
     border: none;
-    background-color: #f1720a;
+    background-color: black;
     color: white;
     position: relative;
+    cursor: pointer;
 }
 
 button a {
@@ -51,18 +52,32 @@ button a {
 button::before {
     content: '';
     position: absolute;
+    border-radius: 50%;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: red;
+    background-color: #f1720a;
+    z-index: -1;
+    transform: scale(1.5);
+    transition: all 500ms ease-in-out;
 }
 
-button:hover {
-    color: rgb(241, 198, 172);
-    background-color: black;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-}
+button:hover::before, button:focus::before {
+    transform: scale(0);
+ }
+
+ button {
+    z-index: 1;
+    overflow: hidden;
+    transition: all 500ms ease-in-out;
+ }
+
+ button:hover, button:focus {
+    color: yellow;
+    transform: translateY(5px);
+    box-shadow: none;
+ }
 
 .grid {
     margin: 20px auto;
