@@ -147,7 +147,7 @@ function lose() {
     squares[currentIndex].classList.contains('l5') ||
     currentTime <= 0
     ) {
-        resultDisplay.textContent = 'You lose ☹️';
+        resultDisplay.textContent = 'You lost';
         clearInterval(timerId);
         clearInterval(outcomeTimerId);
         squares[currentIndex].classList.remove('frog');
@@ -160,7 +160,7 @@ function lose() {
 
 function win() {
     if (squares[currentIndex].classList.contains('ending-block')) {
-        resultDisplay.textContent = 'You won 😄';
+        resultDisplay.textContent = 'You won';
         clearInterval(timerId);
         clearInterval(outcomeTimerId);
         document.removeEventListener('keyup', moveFrog);
