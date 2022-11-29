@@ -33,8 +33,10 @@ button {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     transition: all 200ms ease-in-out;
     border: none;
-    background-color: #f1720a;
+    background-color: black;
     color: white;
+    position: relative;
+    cursor: pointer;
 }
 
 button a {
@@ -46,11 +48,37 @@ button a {
     display: none;
 }
 
-button:hover {
-    color: rgb(241, 198, 172);
-    background-color: black;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+button::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f1720a;
+    z-index: -1;
+    transform: scale(1.5);
+    transition: all 500ms ease-in-out;
 }
+
+button:hover::before, button:focus::before {
+    transform: scale(0);
+ }
+
+ button {
+    z-index: 1;
+    overflow: hidden;
+    transition: all 500ms ease-in-out;
+ }
+
+ button:hover, button:focus {
+    color: yellow;
+    transform: translateY(5px);
+    box-shadow: none;
+ }
+
+
 
 .grid {
     margin: 20px auto;
@@ -80,15 +108,6 @@ button:hover {
     color: rgb(240, 4, 4);
     background-color: white;
 }
-
-
-/* .log-left, .log-right {
-    background-color: lightblue
-} */
-
-/* .car-left, .car-right {
-    background-color: rgb(84, 85, 85)
-} */
 
 .l1, .l2, .l3 {
     background: linear-gradient(0deg, rgb(83, 54, 54) 1.9%, rgb(200, 125, 76) 39.7%, rgb(83, 54, 54) 90.5%);
